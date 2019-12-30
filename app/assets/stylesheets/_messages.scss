@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.side_bar{
+  height: 100vh;
+  width: 250px;
+    &-login-user{
+      height: 100px;
+      background-color:orange;
+        &-name{
+          font-family: fantasy;
+          font-size: 30px;
+          text-align: center;
+          padding-top:10px ;
+          color: gray;
+        }
+        
+    }
+    &-class-list{
+      height: calc( (100vh - 180px) / 2 );
+      background-color:lightpink;
+      overflow: scroll;
+        &-classname{
+          text-align: center;
+          font-size: 20px;
+        }
+        
+    }
+    &-sensei-list{
+      height: calc( (100vh - 180px) / 2 );
+      background-color: lightskyblue;
+      overflow: scroll;
+        &-senseiname{
+          text-align: center;
+          font-size: 20px;
+        }
+    }
+    &-photo{
+      background-color: orange;
+      height: 80px;
+        &-class{
+          text-align: center;
+          
+        }
+    }
+    
+}
+
+.main_chat{
+  height: 100vh;
+  width: calc( 100vw - 250px );
+    &-header{
+      height: 100px;
+      background-color: orange;
+        &-classname{
+          display: flex;
+          font-size: 50px;
+          font-family: fantasy;
+          color: gray;
+          margin-left: 250px;
+          position: relative;
+          top: 15px;
+           
+        }
+       
+    }
+    &_space{
+      height: calc( 100vh - 180px);
+      background-color: lightyellow;
+      overflow: scroll;
+        &-message{
+          width: calc( 100vw - 350px);
+          margin: 0 auto;
+          &-title{
+            font-size: 30px;
+            padding-top: 40px;
+          }
+        }
+    }
+    &-footer{
+      height: 80px;
+      background-color:orange;
+      width: calc( 100vw - 250px );
+      display: flex;
+     
+      &-writer-space{
+        height: 60px;
+        width:calc( 100vw - 400px );
+        background-color: white;
+        position: relative;
+        top: 10px;
+        display: flex;
+        
+      }
+      &-send{
+        height: 60px;
+        width: 100px;
+        background-color: blue;
+        margin-left: 30px;
+        margin-top: 10px;
+        &-font{
+          color: white;
+          text-align: center;
+          line-height: 60px;
+        }
+      }
+    }
+}
+
+.aaa{
+  height: 100px;
+  width: 50px;
+  position: relative;
+  left: 50px;
+}
+
+.writer-space{
+  height: 60px;
+  width: calc( 100vw - 450px );
+}
+
+.bbb{
+  display: none;
+  }
+
+.input-box__image{
+  font-size: 30px;
+}
