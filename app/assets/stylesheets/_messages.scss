@@ -25,20 +25,12 @@
       height: calc( (100vh - 180px) / 2 );
       background-color:lightpink;
       overflow: scroll;
-        &-classname{
-          text-align: center;
-          font-size: 20px;
-        }
         
     }
     &-sensei-list{
       height: calc( (100vh - 180px) / 2 );
       background-color: lightskyblue;
       overflow: scroll;
-        &-senseiname{
-          text-align: center;
-          font-size: 20px;
-        }
     }
     &-photo{
       background-color: orange;
@@ -131,3 +123,4 @@
 .input-box__image{
   font-size: 30px;
 }
+
