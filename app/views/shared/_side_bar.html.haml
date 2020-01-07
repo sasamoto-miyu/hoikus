@@ -1,0 +1,31 @@
+.side_bar
+  .side_bar-login-user
+    .side_bar-login-user-name
+      = current_user.name
+    .side_bar-login-user-icon
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'cog', class: 'icon')
+  .side_bar-class-list
+    .side_bar-class-list-icon
+      = link_to new_group_path do
+        %i.fas.fa-pen-square
+    .side_bar-class-list-name
+      .side_bar-class-list-name.group
+        = link_to '#' do
+          .side_bar-class-list-name.group__name
+            aaa
+          .side_bar-class-list-name.group__message
+            メッセージはまだありません。
+  .side_bar-sensei-list
+    .side_bar-sensei-list-icon
+      = link_to new_group_path do
+        %i.fas.fa-pen-square
+    .side_bar-sensei-list-senseiname
+      .side_bar-sensei-list-name.group
+        = link_to '#' do
+          .side_bar-sensei-list-name.group__name
+            sss
+          .side_bar-sensei-list-name.group__message
+            メッセージはまだありません。
+  .side_bar-photo  
+    .side_bar-photo-class
